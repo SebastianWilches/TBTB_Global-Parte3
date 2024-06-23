@@ -4,7 +4,7 @@ Este repositorio contiene el frontend elaborado en React, en el que a partir de 
 ## Instalación
 Descargue el repositorio del proyecto en su directorio local:
 ```
-git clone TBTB_Global-Parte3
+git clone https://github.com/SebastianWilches/TBTB_Global-Parte3.git
 ```
 Abra su terminal en proyecto local, y ejecute:
 ```
@@ -17,8 +17,29 @@ npm run dev
 
 ## Demo
 ### Vistas de usuarios en Cards y Table
-<!-- TODO: Anexar la imagen con el URL -->
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo1.png" alt="Demo1">
+</p>
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo2.png" alt="Demo2">
+</p>
+
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo4.png" alt="Demo4">
+</p>
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo5.png" alt="Demo5">
+</p>
+
 ### Filtro
-<!-- TODO: Anexar la imagen con el URL -->
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo3.png" alt="Demo3">
+</p>
+
 ### Diseño responsive
-<!-- TODO: Anexar la imagen con el URL -->
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo4.png" alt="Demo4">
+</p>
+<p align="center" style="padding: 20px; background: #252832">
+    <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo5.png" alt="Demo5">
+</p>
