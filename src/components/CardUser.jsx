@@ -10,7 +10,7 @@ export const CardUser = ({dataUser}) => {
         <h3>{dataUser.name}</h3>
         <p>📧 {dataUser.email}</p>
         <p>📱 {dataUser.phone}</p>
-        <p>🏠 {`${dataUser.address.street} - ${dataUser.address.suite}`}</p>
+        <p>🏠 {`${dataUser.address.city}`}</p>
       </div>
     </article>
   )

@@ -36,6 +36,9 @@ export const UsersComponent = () => {
         case 'Telefono':
             results = !search ? dataUsers : dataUsers.filter((dato) => dato.phone.toLowerCase().includes(search.toLocaleLowerCase()))
             break;
+        case 'Ciudad':
+            results = !search ? dataUsers : dataUsers.filter((dato) => dato.address.city.toLowerCase().includes(search.toLocaleLowerCase()))
+            break;
     }
 
     useEffect(() => {
@@ -107,6 +110,16 @@ export const UsersComponent = () => {
                                     onChange={onTypeSearch}
                                 />
                                 <label htmlFor="Telefono">Telefono</label>
+
+                                <input
+                                    type="radio"
+                                    name="typeSearch"
+                                    value="Ciudad"
+                                    id="Ciudad"
+                                    checked={typeSearch === "Ciudad"}
+                                    onChange={onTypeSearch}
+                                />
+                                <label htmlFor="Ciudad">Ciudad</label>
                             </div>
 
 

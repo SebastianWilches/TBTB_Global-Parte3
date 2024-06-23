@@ -9,7 +9,7 @@ export const TableUsers = ({dataUsers}) => {
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Télefono</th>
-                    <th>Dirección</th>
+                    <th>Ciudad</th>
                 </tr>
             </thead>
             <tbody>
@@ -18,7 +18,7 @@ export const TableUsers = ({dataUsers}) => {
                         <td>{user.name}</td>
                         <td>{user.email}</td>
                         <td>{user.phone}</td>
-                        <td>{`${user.address.street} - ${user.address.suite}`}</td>
+                        <td>{`${user.address.city}`}</td>
                     </tr>
                 ))}
             </tbody>
