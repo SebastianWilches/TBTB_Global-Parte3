@@ -8,11 +8,16 @@ export const UsersComponent = () => {
     const urlBase = 'https://jsonplaceholder.typicode.com/users';
     const [loading, setLoading] = useState(true); //Flag de loading
     const [dataUsers, setDataUsers] = useState([]);
+    const [typeSearch, setTypeSearch] = useState('Nombre') //Tipo de busqueda sobre campo
     const [search, setSearch] = useState("") //Input de busqueda
-    const [typeView, setTypeView] = useState('Table') //Cambio de vista para la data de users
+    const [typeView, setTypeView] = useState('Table') //Cambio de vista para la data de users (Table o Card)
 
     const onSearchInput = (e) => {
         setSearch(e.target.value)
+    }
+
+    const onTypeSearch = (e) => {
+        setTypeSearch(e.target.value)
     }
 
     const onTypeView = e => {
@@ -20,7 +25,18 @@ export const UsersComponent = () => {
     }
 
     // Filtrar la data que viene de la API con un filter, en caso de que este vacio devuelve el original
-    const results = !search ? dataUsers : dataUsers.filter((dato) => dato.name.toLowerCase().includes(search.toLocaleLowerCase()))
+    let results = []
+    switch (typeSearch) {
+        case 'Nombre':
+            results = !search ? dataUsers : dataUsers.filter((dato) => dato.name.toLowerCase().includes(search.toLocaleLowerCase()))
+            break;
+        case 'Email':
+            results = !search ? dataUsers : dataUsers.filter((dato) => dato.email.toLowerCase().includes(search.toLocaleLowerCase()))
+            break;
+        case 'Telefono':
+            results = !search ? dataUsers : dataUsers.filter((dato) => dato.phone.toLowerCase().includes(search.toLocaleLowerCase()))
+            break;
+    }
 
     useEffect(() => {
         //Hacer el llamado a la API apenas se cargue la página
@@ -42,7 +58,7 @@ export const UsersComponent = () => {
     return (
         <div className='containerMain'>
             <h1>Usuarios Aplicación Web</h1>
-            <h3>🔎 Búsqueda por nombre: <input value={search} onChange={onSearchInput} type="text" /></h3>
+
 
             {
                 loading ? (
@@ -59,6 +75,41 @@ export const UsersComponent = () => {
                 ) :
                     (
                         <>
+                            <div className="containerTypeView">
+                            <h3>🔎 Buscar: <input value={search} onChange={onSearchInput} type="text" /></h3>
+                            <h3> sobre el campo:</h3>
+                                <input
+                                    type="radio"
+                                    name="typeSearch"
+                                    value="Nombre"
+                                    id="Nombre"
+                                    checked={typeSearch === "Nombre"}
+                                    onChange={onTypeSearch}
+                                />
+                                <label htmlFor="Nombre">Nombre</label>
+
+                                <input
+                                    type="radio"
+                                    name="typeSearch"
+                                    value="Email"
+                                    id="Email"
+                                    checked={typeSearch === "Email"}
+                                    onChange={onTypeSearch}
+                                />
+                                <label htmlFor="Email">Email</label>
+
+                                <input
+                                    type="radio"
+                                    name="typeSearch"
+                                    value="Telefono"
+                                    id="Telefono"
+                                    checked={typeSearch === "Telefono"}
+                                    onChange={onTypeSearch}
+                                />
+                                <label htmlFor="Telefono">Telefono</label>
+                            </div>
+
+
                             <div className='containerTypeView'>
                                 <h3>🖼️ Tipo de vista:</h3>
                                 <input
