@@ -43,3 +43,6 @@ npm run dev
 <p align="center" style="padding: 20px; background: #252832">
     <img src="https://github.com/SebastianWilches/TBTB_Global-Parte3/blob/main/src/assets/demo/Demo5.png" alt="Demo5">
 </p>
+
+## Parte I y II
+El desarrollo de la base de datos y la API puede ser encontrado [**aquí**](https://github.com/SebastianWilches/SpotiSebas).
