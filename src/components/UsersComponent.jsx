@@ -76,8 +76,8 @@ export const UsersComponent = () => {
                     (
                         <>
                             <div className="containerTypeView">
-                            <h3>🔎 Buscar: <input value={search} onChange={onSearchInput} type="text" /></h3>
-                            <h3> sobre el campo:</h3>
+                            <h3>🔎 Buscar <input value={search} onChange={onSearchInput} type="text" /></h3>
+                            <h3>sobre el campo:</h3>
                                 <input
                                     type="radio"
                                     name="typeSearch"

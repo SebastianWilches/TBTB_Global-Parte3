@@ -1,8 +1,10 @@
 /* Tipografia */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap'); /* Red Hat */
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap'); /* Intertight */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* Red Hat */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+/* Intertight */
 
-:root{
+:root {
   --background: #EFF4FF;
   --primary: #5C8EF2;
   --secondary: #F25252;
@@ -11,29 +13,47 @@
 
   --titleFont: "Red Hat Display", sans-serif;
   --textFont: "Inter Tight", sans-serif;
+
 }
 
-html{
+
+html {
   height: 100%;
   background-color: var(--background);
 }
 
-body{
+body {
   margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--titleFont);
   font-weight: bold;
   color: var(--text)
 }
 
-p, th, td, label{
+p,
+th,
+td,
+label {
   font-family: var(--textFont);
   color: var(--text)
 }
 
-.containerMain{
+.containerMain {
   width: min(90%, 110rem);
-    margin: 0 auto;
+  margin: 0 auto 6rem;
 }
