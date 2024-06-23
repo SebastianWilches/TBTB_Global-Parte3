@@ -6,7 +6,7 @@ Descargue el repositorio del proyecto en su directorio local:
 ```
 git clone https://github.com/SebastianWilches/TBTB_Global-Parte3.git
 ```
-Abra su terminal en proyecto local, y ejecute:
+Abra la carpeta **TBTB_Global-Parte3** con Visual Studio Code, y con su terminal integrada, ejecute:
 ```
 npm i
 ```
