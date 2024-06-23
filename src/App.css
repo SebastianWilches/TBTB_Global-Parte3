@@ -28,3 +28,8 @@ p, th, td{
   font-family: var(--textFont);
   color: var(--text)
 }
+
+.containerMain{
+  width: min(90%, 110rem);
+    margin: 0 auto;
+}

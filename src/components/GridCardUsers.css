@@ -1,4 +1,25 @@
 .gridCardUsers{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+@media (max-width: 1500px) {
+    .gridCardUsers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    .gridCardUsers {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container-card {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+    }
 }

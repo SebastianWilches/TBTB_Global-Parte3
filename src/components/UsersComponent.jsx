@@ -34,7 +34,7 @@ export const UsersComponent = () => {
 
 
     return (
-        <div className='container'>
+        <div className='containerMain'>
             <input value={search} onChange={searcher} type="text" />
             {
                 loading ? (
@@ -51,7 +51,7 @@ export const UsersComponent = () => {
                 ) :
                     (
                         <>
-                            <TableUsers dataUsers={results} />
+                            {/* <TableUsers dataUsers={results} /> */}
                             <GridCardUsers dataUsers={results}/>
                         </>
                     )
