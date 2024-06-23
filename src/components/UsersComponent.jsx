@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
 import { TableUsers } from './TableUsers';
 import { GridCardUsers } from './GridCardUsers';
+import './UsersComponent.css'
 
 export const UsersComponent = () => {
     const urlBase = 'https://jsonplaceholder.typicode.com/users';
@@ -40,7 +41,8 @@ export const UsersComponent = () => {
 
     return (
         <div className='containerMain'>
-            <input value={search} onChange={onSearchInput} type="text" />
+            <h3>🔎 Búsqueda por nombre: <input value={search} onChange={onSearchInput} type="text" /></h3>
+
             {
                 loading ? (
                     <ThreeDots
@@ -56,25 +58,29 @@ export const UsersComponent = () => {
                 ) :
                     (
                         <>
-                            <input
-                                type="radio"
-                                name="typeView"
-                                value="Table"
-                                id="Table"
-                                checked={typeView === "Table"}
-                                onChange={onTypeView}
-                            />
-                            <label htmlFor="Table">Table</label>
+                            <div className='containerTypeView'>
+                                <h3>🖼️ Tipo de vista:</h3>
+                                <input
+                                    type="radio"
+                                    name="typeView"
+                                    value="Table"
+                                    id="Table"
+                                    checked={typeView === "Table"}
+                                    onChange={onTypeView}
+                                />
+                                <label htmlFor="Table">Table</label>
 
-                            <input
-                                type="radio"
-                                name="typeView"
-                                value="Card"
-                                id="Card"
-                                checked={typeView === "Card"}
-                                onChange={onTypeView}
-                            />
-                            <label htmlFor="Card">Card</label>
+                                <input
+                                    type="radio"
+                                    name="typeView"
+                                    value="Card"
+                                    id="Card"
+                                    checked={typeView === "Card"}
+                                    onChange={onTypeView}
+                                />
+                                <label htmlFor="Card">Card</label>
+                            </div>
+
 
 
                             {/* Renderizado condicional del tipo de vista */}
