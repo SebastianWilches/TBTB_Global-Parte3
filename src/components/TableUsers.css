@@ -1,0 +1,48 @@
+/* Estilos generales para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre las celdas */
+    margin: 20px 0; /* Espacio superior e inferior de la tabla */
+    font-family: Arial, sans-serif; /* Fuente para la tabla */
+    background-color: #f9f9f9; /* Color de fondo de la tabla */
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  thead {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+  }
+  
+  thead th {
+    padding: 10px; /* Espacio interno de las celdas del encabezado */
+    text-align: left; /* Alineación del texto a la izquierda */
+    font-weight: bold; /* Negrita para el texto */
+    color: #EFF4FF;
+  }
+  
+  /* Estilos para las filas del cuerpo de la tabla */
+  tbody tr {
+    border-bottom: 1px solid #ddd; /* Línea inferior de cada fila */
+  }
+  
+  tbody td {
+    padding: 10px; /* Espacio interno de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda */
+  }
+  
+  /* Estilo para alternar colores de las filas */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+  }
+  
+  /* Estilo para hover en las filas del cuerpo de la tabla */
+  tbody tr:hover {
+    background-color: #eaeaea; /* Color de fondo al pasar el ratón */
+  }
+  
+  /* Estilos específicos para la clase de la tabla (si se desea personalizar más) */
+  .custom-table {
+    border: 1px solid #ccc; /* Borde de la tabla */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Para aplicar el borde redondeado correctamente */
+  }

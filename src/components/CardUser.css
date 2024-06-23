@@ -1,23 +1,9 @@
-/* .container-card{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: row;
-    
-    width: auto;
-    max-height: 20rem;
-}
-
-.container-card > img{
-    height: 100%;
-} */
-
 .container-card {
     display: flex;
     align-items: center;
     background-color: #F4F4F5;
-    /* border: 1px solid #ccc; */
     padding: 10px;
-    max-width: 30rem;
+    width: 25rem;
     margin: 10px auto;
 
     border-radius: 2rem;
