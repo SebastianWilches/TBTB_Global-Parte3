@@ -1,0 +1,11 @@
+nav {
+    background-color: #ffff;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+nav>h1 {
+    margin: 0;
+    text-align: center;
+}

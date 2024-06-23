@@ -41,6 +41,7 @@ export const UsersComponent = () => {
 
     return (
         <div className='containerMain'>
+            <h1>Usuarios Aplicación Web</h1>
             <h3>🔎 Búsqueda por nombre: <input value={search} onChange={onSearchInput} type="text" /></h3>
 
             {

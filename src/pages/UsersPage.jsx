@@ -6,7 +6,6 @@ export const UsersPage = () => {
 
     return (
         <>
-            <h1>Usuarios Aplicación Web</h1>
             <UsersComponent/>
         </>
     )
