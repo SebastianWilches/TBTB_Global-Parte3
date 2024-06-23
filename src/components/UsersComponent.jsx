@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ThreeDots } from 'react-loader-spinner'
 import { TableUsers } from './TableUsers';
+import { CardUser } from './CardUser';
 
 export const UsersComponent = () => {
     const urlBase = 'https://jsonplaceholder.typicode.com/users';
@@ -49,7 +50,13 @@ export const UsersComponent = () => {
                     />
                 ) :
                     (
-                        <TableUsers dataUsers={results} />
+                        <>
+                            <TableUsers dataUsers={results} />
+                            <CardUser />
+                            <CardUser />
+                            <CardUser />
+                            <CardUser />
+                        </>
                     )
 
             }
