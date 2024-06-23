@@ -1,8 +1,24 @@
-# React + Vite
+# Prueba Técnica de Ingreso Desarrollador para TBTB Global - Parte III
+## Descripción
+Este repositorio contiene el frontend elaborado en React, en el que a partir de una API brindada permite representar la información en dos formas Table y Cards, además de permitir el filtrado de dichos usuarios sobre los campos de Nombre, Email, Teléfono y Ciudad.
+## Instalación
+Descargue el repositorio del proyecto en su directorio local:
+```
+git clone TBTB_Global-Parte3
+```
+Abra su terminal en proyecto local, y ejecute:
+```
+npm i
+```
+Para abrir el proyecto en modo de desarrollo, ejecute en la terminal:
+```
+npm run dev
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
+### Vistas de usuarios en Cards y Table
+<!-- TODO: Anexar la imagen con el URL -->
+### Filtro
+<!-- TODO: Anexar la imagen con el URL -->
+### Diseño responsive
+<!-- TODO: Anexar la imagen con el URL -->
